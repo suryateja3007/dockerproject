@@ -1,28 +1,28 @@
 version: '3'
 services:
   movies:
-    image: suryateja3007/moviesimagepaytm:latest
+    image: suryateja3007/moviesrepopaytm:latest
     ports:
       - "80:80"
     deploy:
       replicas: 3
 
   train:
-    image: suryateja3007/trainimagepaytm:latest
+    image: suryateja3007/trainrepopaytm:latest
     ports:
       - "81:80"
     deploy:
       replicas: 3
 
     dth:
-    image: suryateja3007/dthimagepaytm:latest
+    image: suryateja3007/dthrepopaytm:latest
     ports:
       - "82:80"
     deploy:
       replicas: 3
 
  recharge:
-    image: suryateja3007/rechargeimagepaytm:latest
+    image: suryateja3007/rechargerepopaytm:latest
     ports:
       - "83:80"
     deploy:
